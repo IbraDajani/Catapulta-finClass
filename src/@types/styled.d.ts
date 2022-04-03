@@ -17,7 +17,7 @@ declare module "styled-components" {
     | "error"
     | "placeholder";
 
-  export interface PalleteType {
+  export interface PaletteType {
     primary: ColorType;
     backdrop: ColorType;
     background: ColorType;
@@ -40,7 +40,7 @@ declare module "styled-components" {
 
   export interface DefaultTheme {
     typography: Typography;
-    colors: PalleteType;
+    colors: PaletteType;
     border: Border;
   }
 }
