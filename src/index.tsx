@@ -1,6 +1,7 @@
 import { StatusBar } from "expo-status-bar";
-import { Text, View } from "react-native";
+import { View } from "react-native";
 import { useTheme } from "styled-components";
+import Text from "./components/Text";
 import { Container } from "./styles";
 
 const App = () => {
@@ -9,14 +10,7 @@ const App = () => {
     <>
       <StatusBar style="auto" />
       <Container>
-        <Text
-          style={{
-            fontFamily: typography.regular.fontFamily,
-            fontSize: 24,
-          }}
-        >
-          Hello Theme
-        </Text>
+        <Text>Hello</Text>
       </Container>
     </>
   );
