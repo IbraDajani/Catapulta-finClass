@@ -1,21 +1,25 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import { Text, View } from "react-native";
+import { useTheme } from "styled-components";
+import { Container } from "./styles";
 
 const App = () => {
+  const { typography } = useTheme();
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+    <>
       <StatusBar style="auto" />
-    </View>
+      <Container>
+        <Text
+          style={{
+            fontFamily: typography.regular.fontFamily,
+            fontSize: 24,
+          }}
+        >
+          Hello Theme
+        </Text>
+      </Container>
+    </>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-});
 
 export default App;
