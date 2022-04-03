@@ -7,6 +7,7 @@ import Button from "./components/Button";
 import Separator from "./components/Separator";
 import BackButton from "./components/BackButton";
 import Dots from "./components/Dots";
+import Input from "./components/Input";
 
 const App = () => {
   const {} = useTheme();
@@ -21,7 +22,11 @@ const App = () => {
         <Text>Hello</Text>
         <Separator height={20} />
         <Dots amount={10} />
-        <Separator height={20} />
+        <Separator height={40} />
+        <Input name="Email" error="Não tem email" />
+        <Separator height={40} />
+        <Input secureTextEntry name="Password" error="Não tem password" />
+        <Separator height={40} />
         <Button textType="bold" title="Assine agora" />
       </Container>
     </>
