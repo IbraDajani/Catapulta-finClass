@@ -23,7 +23,7 @@ export const theme: DefaultTheme = {
       onMain: appColors.neutralLightest,
     },
     backdrop: {
-      main: appColors.neutralDarkest,
+      main: appColors.neutralDark,
       onMain: appColors.neutralLightest,
     },
     error: {
