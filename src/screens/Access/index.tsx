@@ -39,7 +39,7 @@ const Access: React.FC = () => {
             />
           }
           onPress={handleButtonLogin}
-        ></Button>
+        />
         <Separator height={45} />
       </Content>
     </Container>
