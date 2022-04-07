@@ -17,8 +17,10 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import Input from "../../components/Input";
 import Button from "../../components/Button";
 import { schemaLogin } from "./validation";
+import useAuth from "../../hooks/useAuth";
 
 const Login = () => {
+  const { login } = useAuth();
   const {
     control,
     handleSubmit,
@@ -37,7 +39,7 @@ const Login = () => {
 
   const onSubmit = async () => {
     await handleSubmit(({ email, password }) => {
-      //TODO
+      login();
     })();
   };
 
