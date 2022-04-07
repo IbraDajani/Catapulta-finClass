@@ -3,7 +3,6 @@ import { ThemeProvider } from "styled-components";
 import { useFonts } from "expo-font";
 import { fonts } from "./src/styles/fonts";
 import App from "./src";
-import Button from "./src/components/Button";
 
 export default function Main() {
   const [fontsLoaded] = useFonts(fonts);
