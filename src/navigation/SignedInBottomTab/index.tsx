@@ -26,7 +26,7 @@ const SignedInBottomTab = () => {
     <Navigator
       screenOptions={{
         tabBarActiveTintColor: colors.background.onMain,
-        tabBarInactiveTintColor: colors.background.main,
+        tabBarInactiveTintColor: colors.placeholder.main,
         headerShown: false,
         tabBarStyle: {
           backgroundColor: colors.backdrop.main,
