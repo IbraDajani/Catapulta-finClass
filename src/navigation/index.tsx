@@ -5,7 +5,7 @@ import SignInStack from "./SignInStack";
 
 const Navigation = () => {
   const { isLogged, login, logout } = useAuth();
-  return isLogged ? <SignedInBottomTab /> : <SignInStack />;
+  return !isLogged ? <SignedInBottomTab /> : <SignInStack />;
 };
 
 export default Navigation;
