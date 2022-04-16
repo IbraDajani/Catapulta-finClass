@@ -96,6 +96,7 @@ const Menu: React.FC = () => {
         <Text size={11} type="bold" color={colors.placeholder.main}>
           Finclass 1.3.0
         </Text>
+        <Separator height={15} />
       </ScrollView>
     </Container>
   );
