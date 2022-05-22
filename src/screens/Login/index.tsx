@@ -90,7 +90,7 @@ const Login = () => {
                 autoCompleteType="password"
                 autoCapitalize="none"
                 name="Senha"
-                placeholder="Insira o seu Senha"
+                placeholder="Insira a seu Senha"
                 secureTextEntry
                 onChange={onChange}
                 onChangeText={(text) => setValue("password", text)}
