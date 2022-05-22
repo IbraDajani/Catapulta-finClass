@@ -21,7 +21,6 @@ const SignedInBottomTab = () => {
   const handleSizeTo80Percentage = (size: number) => {
     return size * 0.8;
   };
-  //   const {};
   return (
     <Navigator
       screenOptions={{
